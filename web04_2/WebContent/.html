@@ -1,0 +1,42 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>    
+<%
+	String name = "김기태";
+	int num = 1004;
+	int num1=50, num2=60;
+	//CustomVO vo = new CustomVO(); 
+	//vo.setCusid("kkt");
+%>    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>연산식</title>
+</head>
+<body>
+	<h2>표현식(Expression)</h2>
+	<p>1.  jsp의 표현식 문자 : <%="Hello" %></p>
+	<p>2. jsp의 표현식 숫자 : <%=20 %></p>
+	<p>3. jsp의 표현식 문자열변수: <%=name %></p>
+	<p>4. jsp의 표현식 숫자변수: <%=num %></p>
+	<p>5. jsp의 표현식 연산문 : <%=name+num %></p>
+	<p>6. jsp의 표현식 비교 : <%=num1>num2 %></p>
+	<p>7. jsp의 표현식 연산문 : <%=num1+40 %></p>
+	<p>8. jsp의 표현식 연산문 : <%=num1%3 %></p>
+	<p>9. jsp의 표현식 연산문 : <%=num1>40 ? "크다" : "작다" %></p>
+	<%--  <p>10. jsp의 표현식 객체 접근 : <%=vo.getCusid() %></p> --%>
+	<p>표현식은 각종 함수나 클래스 적용이 되지 않으며, 객체의 활용이 자유롭지 못함</p>
+	<h2>표현 언어(Expression Language)</h2>
+	<p>1. jsp의 표현언어 문자 : ${name }</p>
+	<p>2. jsp의 표현언어 문자 : ${num }</p>
+	<p>1. jsp의 표현언어 연산문 : ${num1+num2 }</p>
+	<p>1. jsp의 표현언어 연산문 : ${name+num1 }</p>
+	<br>
+	<p>jsp 2.1부터 도입된 표현 언어 #</p>
+	<p>$ 즉시 (Real) 실행: 연산 즉시 실행</p>
+	<p># 지연(Deferred) 실행: 연산 후 모두 끝나고 나서 실행</p>
+	<p>1. jsp의 표현언어 문자2 : #{name }</p>
+	<p>2. jsp의 표현언어 문자2 : #{num }</p>
+	
+</body>
+</html>

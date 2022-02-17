@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>로그인</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+	href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR&display=swap"
+	rel="stylesheet">
+<link rel="stylesheet" href="./css/reset.css">
+<link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="./css/common.css">
+<style>
+.h1 { text-align: center; }
+.form_login { width: 800px; margin:40px auto;}
+.inbtn { width: 150px; height: 50px; text-align: center; margin:auto;}
+.indata {display:block; width:500px; height: 50px; margin:40px auto;}
+</style>
+
+</head>
+<body>
+	<div class="wrap">
+		<header class="hd">
+			<nav class="gnb">
+				<ul class="menu">
+					<li><a href="">메뉴1</a></li>
+					<li><a href="">메뉴2</a></li>
+					<li><a href="">메뉴3</a></li>
+					<li><a href="">메뉴4</a></li>
+					<li><a href="">메뉴5</a></li>
+				</ul>
+			</nav>
+		</header>
+			<h1>로그인</h1>
+			<form action="login.jsp" class=form_login method="post">
+				<input type="text" id="m_id" name="m_id" placeholder="아이디를 입력하세요" class="indata" autofocus required/>
+				<input type="password" id="m_pw" name="m_pw" placeholder="비밀번호를 입력하세요" class="indata" required/>
+				<br><br>
+				<input type="submit" value="로그인" class="inbtn"/>
+				&nbsp; &nbsp;
+				<input type="reset" value="취소" class="inbtn"/>
+			
+			</form>
+		<footer class="ft">
+			<div class="ft_wrap">
+				<p class="copyright">copyrights 2021. Companyname inc Co all
+					rights reserved.</p>
+				<address>경기도 고양시 일산동구 000</address>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
